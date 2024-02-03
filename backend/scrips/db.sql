@@ -9,7 +9,7 @@ CREATE TABLE Usuarios (
     Apellido VARCHAR(50),
     DNI INT CHECK (DNI BETWEEN 0 AND 99999999),
     Email VARCHAR(100),
-    Contraseña VARCHAR(100)
+    Contrasena VARCHAR(100) --CAMBIAR A CONTRASENA EN LA BASE DE PHPMYADMIN
 );
 
 -- Tabla de Medicamentos

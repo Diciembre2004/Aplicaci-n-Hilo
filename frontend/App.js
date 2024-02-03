@@ -45,7 +45,8 @@ const Stack = createNativeStackNavigator();
 const StackNav = () => {
   return (
       <Stack.Navigator> 
-        <Stack.Screen name="paravertodaslasvistas" component={Paravertodaslasvistas} />
+        
+        {/* <Stack.Screen name="paravertodaslasvistas" component={Paravertodaslasvistas} /> */}
         
         <Stack.Screen name="bienvenida" component={Bienvenida} />
         <Stack.Screen name="login" component={Login} />
