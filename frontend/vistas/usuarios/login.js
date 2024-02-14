@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { View, Text, StyleSheet } from "react-native";
 import { Botones } from "../../elementos/botones";
 import { Input } from "../../elementos/input";
@@ -11,7 +11,7 @@ const Login = ({ navigation }) => {
   const handleLogin = async () => {
     const data = await checkLogin(email, contrasena);
 
-    if (data.succes) {
+    if (data.success) {
       navigation.navigate("inicio");
     } else {
       console.log("error");
@@ -28,7 +28,7 @@ const Login = ({ navigation }) => {
         />
 
         <View style={styles.titulo}>
-          <Text>Inicie sension</Text>
+          <Text>Iniciar sesión</Text>
         </View>
 
         <Text>Ingrese su email</Text>
@@ -42,7 +42,7 @@ const Login = ({ navigation }) => {
         <Text>Ingrese su contraseña</Text>
         <Input
           texto="Ingrese su contraseña"
-          tipo="numeric"
+          tipo="password"
           ico="eye"
           value={contrasena}
           onChange={setContrasena}
@@ -51,7 +51,7 @@ const Login = ({ navigation }) => {
         <Botones text="Ingresar" onPress={() => handleLogin()} />
 
         <Botones
-          text="Olvidaste tu contraseña? Recupera tu cuenta aqui"
+          text="¿Olvidaste tu contraseña? Recupera tu cuenta aquí"
           onPress={() => navigation.navigate("recuperar")}
         />
 

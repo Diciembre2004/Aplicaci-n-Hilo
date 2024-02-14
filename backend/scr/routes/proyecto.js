@@ -2,6 +2,7 @@ import { Router } from "express";
 
 import {
   login,
+  signup,
   saveUser,
   deleteUser,
   updateUser,
@@ -16,12 +17,13 @@ const router = Router();
 
 //aca las rutas
 router.get("/login", login);
+router.post("/signup", signup);
+
 router.get("/login/submit"); //Esta ruta podría usarse para procesar la solicitud de inicio de sesión.
 router.get("/login/success"); //Esta ruta podría usarse para mostrar una página de éxito después de que el usuario se haya autenticado.
 router.post("/recordatorio", saveUser); //aca los recordatorios
 router.delete("/recordatorio/:id", deleteUser); //borrar
 router.put("/recordatorio/:id", updateUser); //actualizar por id
-
 router.get("/recordatorio", getRecor);
 router.get("/recordatorio/count", getRecorCount);
 router.post("/recordatorio", saveRecor); //aca los recordatorios

@@ -17,3 +17,14 @@ export const checkLogin = async (Email, Contrasena) => {
     console.log("Fallo login", err);
   }
 };
+
+export const createUser = async (username, email, password) => {
+  const response = await fetch(apisu, {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({ username, email, password }),
+  });
+  return await response.json();
+};
