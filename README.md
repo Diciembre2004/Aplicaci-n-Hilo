@@ -8,6 +8,17 @@ Se utiliza la libreria React Native.
 
 Se uso el tutorial https://www.youtube.com/watch?app=desktop&v=HMKVnwlhJO0
 
+  <div align='center'>
+    <a href="https://c15-57-ft-react-agregarback.vercel.app/" target="_blank">
+      <img  src="https://img.shields.io/badge/VER_DEMO-3378FF?style=for-the-badge&logo=vercel&logoColor=%23343B4E"/>
+    </a>
+    <a href="https://www.figma.com/file/u0zUDwyfM5xFLVzLqtyrlr/No-Country" target="_blank">
+      <img  src="https://img.shields.io/badge/VER_DISE%C3%91O-3378FF?style=for-the-badge&logo=figma&logoColor=%23343B4E"/>
+    </a>
+    <a href="https://github.com/No-Country/c15-57-ft-react-agregarback/issues" target="_blank">
+      <img  src="https://img.shields.io/badge/REPORTAR_BUG-343B4E?style=for-the-badge"/>
+    </a>
+  </div>
 
 | rol |
 |:-:|
