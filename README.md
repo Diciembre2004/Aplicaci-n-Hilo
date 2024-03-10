@@ -143,3 +143,13 @@ Se uso el tutorial https://www.youtube.com/watch?app=desktop&v=HMKVnwlhJO0
     </td>
     </tr>
 </table>
+
+First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | Content Cell 
+
+| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
